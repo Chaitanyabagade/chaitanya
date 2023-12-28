@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    
+}
+a{
+  text-decoration: none;
+}
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+
+}
+.logo{
+    height:110px;
+    width:110px;
+    background: url(../images/logo.jpeg)no-repeat;
+    background-size: cover;
+    float:right;
+    margin:5px;
+    border-radius:50%;
+}
+.infotexthead{
+   font-size:70px;
+}  
+   
+.header {
+    
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color:rgba(37, 43, 46, 0.913);
+    position: fixed;
+    height: 120px!important;
+    overflow: hidden;
+    z-index: 8;
+    border: 3px solid black;
+}
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 100px;
+    position:fixed;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+     overflow-y:scroll;
+   overflow-x:scroll;
+}
+#sidebarMenu {
+  
+    height: 100%;
+    position: fixed;
+    left: 0;
+    font-size:35px;
+    width: 350px;
+    margin-top: 120px;
+    transform: translateX(-351px);
+    transition: transform 500ms ease-in-out;
+    background: linear-gradient(180deg,white 0%, rgb(250, 105, 14) 100%);
+}
+.sidebarMenuInner {
+  margin: 0;
+ 
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid black;
+}
+.sidebarMenuInner li {
+  list-style: none;
+  color:black;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid black;
+  padding-left:40px;
+}
+.sidebarMenuInner li span {
+  display: block;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebarMenuInner li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transform: translateX(0);
+}
+
+
+input[type="checkbox"] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 22px;
+  left: 15px;
+  height: 22px;
+  width: 22px;
+  }
+  .spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 10px;
+  width: 50px;
+  background-color: #fff;
+}
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+  margin-top:15px;
+}
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 26px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -20px;
+}
+
+
